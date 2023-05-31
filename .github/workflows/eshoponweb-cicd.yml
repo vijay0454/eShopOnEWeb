@@ -1,15 +1,15 @@
 name: eShopOnWeb Build and Test
 
 #Triggers (uncomment line below to use it)
-#on: [push, workflow_dispatch]
+on: [push, workflow_dispatch]
 
 #Environment variables https://docs.github.com/en/actions/learn-github-actions/environment-variables
 env:
-  RESOURCE-GROUP: rg-az400-eshoponweb-NAME
-  LOCATION: westeurope
+  RESOURCE-GROUP: rg-az400-eshoponweb-vkn
+  LOCATION: Australia East
   TEMPLATE-FILE: .azure/bicep/webapp.bicep
-  SUBSCRIPTION-ID: YOUR-SUBS-ID
-  WEBAPP-NAME: az400-webapp-NAME
+  SUBSCRIPTION-ID: 40c6ebe0-1f28-4326-83cb-5c5b826c7099
+  WEBAPP-NAME: az400-webapp-VKN
 
 
 jobs:
